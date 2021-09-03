@@ -1,0 +1,27 @@
+PROGRAM Test IS
+
+  INSTRUCTION one IS
+     move
+  END one
+  
+  INSTRUCTION two IS
+    turnleft
+    turnleft
+  END two
+
+BEGIN
+  WHILE true DO
+    two
+    one
+  END WHILE
+  IF random THEN
+    infect
+  ELSE
+    skip
+  END IF
+  IF next-is-not-enemy THEN
+    turnleft
+  END IF
+  skip
+  skip
+END Test

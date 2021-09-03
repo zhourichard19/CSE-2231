@@ -1,0 +1,7 @@
+PROGRAM Test IS
+BEGIN
+  WHILE true DO
+    two
+    one
+  END WHILE
+END Test

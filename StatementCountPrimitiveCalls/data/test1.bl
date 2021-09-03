@@ -1,0 +1,48 @@
+move
+IF next-is-not-enemy THEN
+  turnleft
+  WHILE true DO
+    look-for-something
+    infect
+    infect
+    skip
+  END WHILE
+  turnright
+  IF random THEN
+    move
+    turnback
+    move
+    infect
+    move
+  ELSE
+    go-for-it
+    WHILE next-is-empty DO
+    END WHILE
+    turnleft
+    turnright
+  END IF
+  skip
+  skip-again
+END IF
+move
+move-one-more-time
+move
+WHILE next-is-wall DO
+  IF next-is-not-wall THEN
+    WHILE next-is-enemy DO
+      IF next-is-not-enemy THEN
+        infect
+        move
+        turnleft
+        skip
+        turnright
+      ELSE
+        infect
+        move
+        turnleft
+        skip
+        turnright
+      END IF
+    END WHILE
+  END IF
+END WHILE
